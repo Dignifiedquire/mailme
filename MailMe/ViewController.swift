@@ -11,6 +11,11 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var emailInput: NSTextField!
+    @IBOutlet weak var passwordInput: NSSecureTextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

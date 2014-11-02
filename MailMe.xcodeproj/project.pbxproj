@@ -14,6 +14,7 @@
 		783AE22F1A06747600731256 /* MailMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AE22E1A06747600731256 /* MailMeTests.swift */; };
 		783AE23C1A0677AF00731256 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783AE23B1A0677AF00731256 /* Security.framework */; };
 		783AE2581A0679CA00731256 /* libMailCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 783AE24B1A0679BA00731256 /* libMailCore.a */; };
+		78FCB0EC1A0687BD00B39EAE /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB0EB1A0687BD00B39EAE /* MailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		783AE23B1A0677AF00731256 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		783AE2401A0679BA00731256 /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "deps/mailcore2/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
 		783AE25B1A067D9800731256 /* MailMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		78FCB0EB1A0687BD00B39EAE /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				783AE2211A06747600731256 /* Main.storyboard */,
 				783AE2191A06747600731256 /* Supporting Files */,
 				783AE25B1A067D9800731256 /* MailMe-Bridging-Header.h */,
+				78FCB0EB1A0687BD00B39EAE /* MailViewController.swift */,
 			);
 			path = MailMe;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			files = (
 				783AE21E1A06747600731256 /* ViewController.swift in Sources */,
 				783AE21C1A06747600731256 /* AppDelegate.swift in Sources */,
+				78FCB0EC1A0687BD00B39EAE /* MailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
