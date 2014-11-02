@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		783AE21C1A06747600731256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AE21B1A06747600731256 /* AppDelegate.swift */; };
+		783AE21E1A06747600731256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AE21D1A06747600731256 /* ViewController.swift */; };
+		783AE2201A06747600731256 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783AE21F1A06747600731256 /* Images.xcassets */; };
+		783AE2231A06747600731256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783AE2211A06747600731256 /* Main.storyboard */; };
+		783AE22F1A06747600731256 /* MailMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AE22E1A06747600731256 /* MailMeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		783AE2291A06747600731256 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 783AE20E1A06747500731256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783AE2151A06747500731256;
+			remoteInfo = MailMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		783AE2161A06747600731256 /* MailMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		783AE21A1A06747600731256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783AE21B1A06747600731256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		783AE21D1A06747600731256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		783AE21F1A06747600731256 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		783AE2221A06747600731256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		783AE2281A06747600731256 /* MailMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		783AE22D1A06747600731256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783AE22E1A06747600731256 /* MailMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailMeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		783AE2131A06747500731256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783AE2251A06747600731256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		783AE20D1A06747500731256 = {
+			isa = PBXGroup;
+			children = (
+				783AE2181A06747600731256 /* MailMe */,
+				783AE22B1A06747600731256 /* MailMeTests */,
+				783AE2171A06747600731256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		783AE2171A06747600731256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				783AE2161A06747600731256 /* MailMe.app */,
+				783AE2281A06747600731256 /* MailMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		783AE2181A06747600731256 /* MailMe */ = {
+			isa = PBXGroup;
+			children = (
+				783AE21B1A06747600731256 /* AppDelegate.swift */,
+				783AE21D1A06747600731256 /* ViewController.swift */,
+				783AE21F1A06747600731256 /* Images.xcassets */,
+				783AE2211A06747600731256 /* Main.storyboard */,
+				783AE2191A06747600731256 /* Supporting Files */,
+			);
+			path = MailMe;
+			sourceTree = "<group>";
+		};
+		783AE2191A06747600731256 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				783AE21A1A06747600731256 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		783AE22B1A06747600731256 /* MailMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				783AE22E1A06747600731256 /* MailMeTests.swift */,
+				783AE22C1A06747600731256 /* Supporting Files */,
+			);
+			path = MailMeTests;
+			sourceTree = "<group>";
+		};
+		783AE22C1A06747600731256 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				783AE22D1A06747600731256 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		783AE2151A06747500731256 /* MailMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783AE2321A06747600731256 /* Build configuration list for PBXNativeTarget "MailMe" */;
+			buildPhases = (
+				783AE2121A06747500731256 /* Sources */,
+				783AE2131A06747500731256 /* Frameworks */,
+				783AE2141A06747500731256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailMe;
+			productName = MailMe;
+			productReference = 783AE2161A06747600731256 /* MailMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		783AE2271A06747600731256 /* MailMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783AE2351A06747600731256 /* Build configuration list for PBXNativeTarget "MailMeTests" */;
+			buildPhases = (
+				783AE2241A06747600731256 /* Sources */,
+				783AE2251A06747600731256 /* Frameworks */,
+				783AE2261A06747600731256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783AE22A1A06747600731256 /* PBXTargetDependency */,
+			);
+			name = MailMeTests;
+			productName = MailMeTests;
+			productReference = 783AE2281A06747600731256 /* MailMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		783AE20E1A06747500731256 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Friedel Ziegelmayer";
+				TargetAttributes = {
+					783AE2151A06747500731256 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					783AE2271A06747600731256 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 783AE2151A06747500731256;
+					};
+				};
+			};
+			buildConfigurationList = 783AE2111A06747500731256 /* Build configuration list for PBXProject "MailMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 783AE20D1A06747500731256;
+			productRefGroup = 783AE2171A06747600731256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				783AE2151A06747500731256 /* MailMe */,
+				783AE2271A06747600731256 /* MailMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		783AE2141A06747500731256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783AE2201A06747600731256 /* Images.xcassets in Resources */,
+				783AE2231A06747600731256 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783AE2261A06747600731256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		783AE2121A06747500731256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783AE21E1A06747600731256 /* ViewController.swift in Sources */,
+				783AE21C1A06747600731256 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783AE2241A06747600731256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783AE22F1A06747600731256 /* MailMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		783AE22A1A06747600731256 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783AE2151A06747500731256 /* MailMe */;
+			targetProxy = 783AE2291A06747600731256 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		783AE2211A06747600731256 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				783AE2221A06747600731256 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		783AE2301A06747600731256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		783AE2311A06747600731256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		783AE2331A06747600731256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MailMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		783AE2341A06747600731256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MailMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		783AE2361A06747600731256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MailMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailMe.app/Contents/MacOS/MailMe";
+			};
+			name = Debug;
+		};
+		783AE2371A06747600731256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MailMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailMe.app/Contents/MacOS/MailMe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		783AE2111A06747500731256 /* Build configuration list for PBXProject "MailMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783AE2301A06747600731256 /* Debug */,
+				783AE2311A06747600731256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783AE2321A06747600731256 /* Build configuration list for PBXNativeTarget "MailMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783AE2331A06747600731256 /* Debug */,
+				783AE2341A06747600731256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		783AE2351A06747600731256 /* Build configuration list for PBXNativeTarget "MailMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783AE2361A06747600731256 /* Debug */,
+				783AE2371A06747600731256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 783AE20E1A06747500731256 /* Project object */;
+}
