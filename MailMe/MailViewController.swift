@@ -8,9 +8,11 @@
 
 import Cocoa
 
-class MailViewController: NSViewController {
+class MailViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
 
-    @IBOutlet weak var textOutput: NSTextField!
+    @IBOutlet var tableView: NSTableView!
+
+    dynamic var mails: [MCOIMAPMessage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,28 +36,78 @@ class MailViewController: NSViewController {
                 println("Error downloading message headers: \(error)")
             }
 
-            var content = ""
+            self.mails = fetchedMessages as [MCOIMAPMessage]
             
-            for message in fetchedMessages {
-
-                let header = message.header as MCOMessageHeader
-                println(header.from.nonEncodedRFC822String())
-                
-                content += "from: \(header.from.nonEncodedRFC822String())\n"
-
-                var recipients = "to: "
-                for recipient in header.to {
-                    recipients += "\(recipient.nonEncodedRFC822String()), "
-                }
-
-                content += "\(recipients)\n"
-                content += "re: \(header.subject)\n"
-                content += "\n---\n"
-            }
+//            var content = ""
+//            
+//            for message in fetchedMessages {
+//
+//                let header = message.header as MCOMessageHeader
+//                println(header.from.nonEncodedRFC822String())
+//                
+//                content += "from: \(header.from.nonEncodedRFC822String())\n"
+//
+//                var recipients = "to: "
+//                for recipient in header.to {
+//                    recipients += "\(recipient.nonEncodedRFC822String()), "
+//                }
+//
+//                content += "\(recipients)\n"
+//                content += "re: \(header.subject)\n"
+//                content += "\n---\n"
+//            }
             
-            self.textOutput.stringValue += content
+            //self.textOutput.stringValue += content
             
         }
+        
+    }
+    
+    // Table View Methods
+    // ------------------
+    
+    func tableView(tableView: NSTableView!, objectValueForTableColumn tableColumn: NSTableColumn!, row: Int) -> AnyObject!
+    {
+        //        var string:String = "row " + String(row) + ", Col" + String(tableColumn.identifier)
+        //        return string
+
+        return self.data[row]    }
+    
+    let data = [
+        "Debasis",
+        "Friedel",
+        "Joel"
+    ]
+    
+    func numberOfRowsInTableView(tableView: NSTableView) -> Int {
+        return data.count
+    }
+    
+    func tableView(tableView: NSTableView!, viewForTableColumn tableColumn: NSTableColumn!, row: Int) -> NSView? {
+        
+        // Get an existing cell with the MyView identifier if it exists
+        var result = tableView.makeViewWithIdentifier("MyView", owner:self) as NSTextField?
+        
+        // There is no existing cell to reuse so create a new one
+        if result == nil {
+            
+            // Create the new NSTextField with a frame of the {0,0} with the width of the table.
+            // Note that the height of the frame is not really relevant, because the row height will modify the height.
+            result = NSTextField()
+            
+            // The identifier of the NSTextField instance is set to MyView.
+            // This allows the cell to be reused.
+            result?.identifier = "MyView"
+        }
+        
+        // result is now guaranteed to be valid, either as a reused cell
+        // or as a new cell, so set the stringValue of the cell to the
+        // nameArray value at row
+        result?.stringValue = self.data[row]
+        
+        // Return the result
+        return result
+
         
     }
     

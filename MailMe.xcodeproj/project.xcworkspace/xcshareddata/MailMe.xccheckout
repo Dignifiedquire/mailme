@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4DFEF85E-0EFD-40C6-BDEE-39B2FA461365</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MailMe</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9467978FEA1FC686224F50A037826F7E1C397629</key>
+		<string>github.com:dignifiedquire/mailme.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MailMe.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9467978FEA1FC686224F50A037826F7E1C397629</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:dignifiedquire/mailme.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9467978FEA1FC686224F50A037826F7E1C397629</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9467978FEA1FC686224F50A037826F7E1C397629</string>
+			<key>IDESourceControlWCCName</key>
+			<string>mailme</string>
+		</dict>
+	</array>
+</dict>
+</plist>
