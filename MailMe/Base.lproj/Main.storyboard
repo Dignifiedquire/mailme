@@ -768,6 +768,9 @@
                             <constraint firstAttribute="bottom" secondItem="fbZ-bA-hbt" secondAttribute="bottom" id="I74-nn-iZL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="XIJ-nb-jON" id="eCB-Zp-mRK"/>
+                    </connections>
                 </viewController>
                 <customObject id="Tez-vi-Gv3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

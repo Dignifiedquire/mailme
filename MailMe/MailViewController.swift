@@ -10,7 +10,8 @@ import Cocoa
 
 class MailViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
 
-    @IBOutlet var tableView: NSTableView!
+    @IBOutlet weak var tableView: NSTableView!
+
 
     dynamic var mails: [MCOIMAPMessage] = []
     
@@ -37,6 +38,7 @@ class MailViewController: NSViewController, NSTableViewDelegate, NSTableViewData
             }
 
             self.mails = fetchedMessages as [MCOIMAPMessage]
+            self.tableView.reloadData()
             
 //            var content = ""
 //            
@@ -71,7 +73,8 @@ class MailViewController: NSViewController, NSTableViewDelegate, NSTableViewData
         //        var string:String = "row " + String(row) + ", Col" + String(tableColumn.identifier)
         //        return string
 
-        return self.data[row]    }
+        return self.mails[row]
+    }
     
     let data = [
         "Debasis",
@@ -80,7 +83,7 @@ class MailViewController: NSViewController, NSTableViewDelegate, NSTableViewData
     ]
     
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
-        return data.count
+        return mails.count
     }
     
     func tableView(tableView: NSTableView!, viewForTableColumn tableColumn: NSTableColumn!, row: Int) -> NSView? {
@@ -101,7 +104,16 @@ class MailViewController: NSViewController, NSTableViewDelegate, NSTableViewData
         // result is now guaranteed to be valid, either as a reused cell
         // or as a new cell, so set the stringValue of the cell to the
         // nameArray value at row
-        result?.senderLabel.stringValue = self.data[row]
+        let mail = self.mails[row]
+        
+        result?.senderLabel.stringValue = mail.header.from.nonEncodedRFC822String()
+        result?.subjectLabel.stringValue = mail.header.subject
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "h:m a"
+        
+        result?.dateLabel.stringValue = dateFormatter.stringFromDate(mail.header.date)
+        
         
         // Return the result
         return result

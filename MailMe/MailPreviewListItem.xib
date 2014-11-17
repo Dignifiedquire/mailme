@@ -28,7 +28,7 @@
                     </textFieldCell>
                 </textField>
                 <textField identifier="DateLabel" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pgo-6X-4MP">
-                    <rect key="frame" x="422" y="159" width="38" height="17"/>
+                    <rect key="frame" x="414" y="159" width="48" height="17"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Date" id="Gl0-V6-LhY">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
