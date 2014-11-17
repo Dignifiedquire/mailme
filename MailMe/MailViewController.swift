@@ -86,24 +86,22 @@ class MailViewController: NSViewController, NSTableViewDelegate, NSTableViewData
     func tableView(tableView: NSTableView!, viewForTableColumn tableColumn: NSTableColumn!, row: Int) -> NSView? {
         
         // Get an existing cell with the MyView identifier if it exists
-        var result = tableView.makeViewWithIdentifier("MyView", owner:self) as NSTextField?
+        var result = tableView.makeViewWithIdentifier("MailPreviewListItemCell", owner:self) as MailPreviewListItemView?
         
         // There is no existing cell to reuse so create a new one
         if result == nil {
+            let cellNib = NSNib(nibNamed: "MailPreviewListItem", bundle: nil)
+            tableView.registerNib(cellNib!, forIdentifier: "MailPreviewListItemCell")
             
             // Create the new NSTextField with a frame of the {0,0} with the width of the table.
             // Note that the height of the frame is not really relevant, because the row height will modify the height.
-            result = NSTextField()
-            
-            // The identifier of the NSTextField instance is set to MyView.
-            // This allows the cell to be reused.
-            result?.identifier = "MyView"
+            result = tableView.makeViewWithIdentifier("MailPreviewListItemCell", owner:self) as MailPreviewListItemView?
         }
         
         // result is now guaranteed to be valid, either as a reused cell
         // or as a new cell, so set the stringValue of the cell to the
         // nameArray value at row
-        result?.stringValue = self.data[row]
+        result?.senderLabel.stringValue = self.data[row]
         
         // Return the result
         return result

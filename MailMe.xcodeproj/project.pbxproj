@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		783AE21C1A06747600731256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AE21B1A06747600731256 /* AppDelegate.swift */; };
-		783AE21E1A06747600731256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AE21D1A06747600731256 /* ViewController.swift */; };
 		783AE2201A06747600731256 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783AE21F1A06747600731256 /* Images.xcassets */; };
 		783AE2231A06747600731256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783AE2211A06747600731256 /* Main.storyboard */; };
 		783AE22F1A06747600731256 /* MailMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783AE22E1A06747600731256 /* MailMeTests.swift */; };
 		783AE23C1A0677AF00731256 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783AE23B1A0677AF00731256 /* Security.framework */; };
 		783AE2581A0679CA00731256 /* libMailCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 783AE24B1A0679BA00731256 /* libMailCore.a */; };
+		78565BC81A1A956A00AC798D /* MailPreviewListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78565BC71A1A956A00AC798D /* MailPreviewListItemView.swift */; };
+		78663F6F1A1930AF00FC76E0 /* MailPreviewListItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78663F6E1A1930AF00FC76E0 /* MailPreviewListItem.xib */; };
 		78FCB0EC1A0687BD00B39EAE /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB0EB1A0687BD00B39EAE /* MailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +88,6 @@
 		783AE2161A06747600731256 /* MailMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		783AE21A1A06747600731256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783AE21B1A06747600731256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		783AE21D1A06747600731256 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		783AE21F1A06747600731256 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		783AE2221A06747600731256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		783AE2281A06747600731256 /* MailMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +96,8 @@
 		783AE23B1A0677AF00731256 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		783AE2401A0679BA00731256 /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "deps/mailcore2/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
 		783AE25B1A067D9800731256 /* MailMe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailMe-Bridging-Header.h"; sourceTree = "<group>"; };
+		78565BC71A1A956A00AC798D /* MailPreviewListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailPreviewListItemView.swift; sourceTree = "<group>"; };
+		78663F6E1A1930AF00FC76E0 /* MailPreviewListItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MailPreviewListItem.xib; sourceTree = "<group>"; };
 		78FCB0EB1A0687BD00B39EAE /* MailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,12 +145,12 @@
 			isa = PBXGroup;
 			children = (
 				783AE21B1A06747600731256 /* AppDelegate.swift */,
-				783AE21D1A06747600731256 /* ViewController.swift */,
 				783AE21F1A06747600731256 /* Images.xcassets */,
 				783AE2211A06747600731256 /* Main.storyboard */,
 				783AE2191A06747600731256 /* Supporting Files */,
 				783AE25B1A067D9800731256 /* MailMe-Bridging-Header.h */,
 				78FCB0EB1A0687BD00B39EAE /* MailViewController.swift */,
+				7852B47F1A1AA45700EF1F6C /* MailPreviewList */,
 			);
 			path = MailMe;
 			sourceTree = "<group>";
@@ -190,6 +192,15 @@
 				783AE2571A0679BA00731256 /* unittest.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7852B47F1A1AA45700EF1F6C /* MailPreviewList */ = {
+			isa = PBXGroup;
+			children = (
+				78663F6E1A1930AF00FC76E0 /* MailPreviewListItem.xib */,
+				78565BC71A1A956A00AC798D /* MailPreviewListItemView.swift */,
+			);
+			name = MailPreviewList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +344,7 @@
 			files = (
 				783AE2201A06747600731256 /* Images.xcassets in Resources */,
 				783AE2231A06747600731256 /* Main.storyboard in Resources */,
+				78663F6F1A1930AF00FC76E0 /* MailPreviewListItem.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,9 +362,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				783AE21E1A06747600731256 /* ViewController.swift in Sources */,
 				783AE21C1A06747600731256 /* AppDelegate.swift in Sources */,
 				78FCB0EC1A0687BD00B39EAE /* MailViewController.swift in Sources */,
+				78565BC81A1A956A00AC798D /* MailPreviewListItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
